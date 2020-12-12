@@ -15,9 +15,7 @@ $category_old_to_new =
         //'12' => '0', // ПРОУПСКАЕМ Финансы пропускаенм !!!
     ];
 
-
 $posts = $wpdb->get_results("SELECT p.*, cat.category_id FROM `wp_posts_old` p LEFT JOIN `wp_post2cat` cat ON p.ID = cat.post_id");
-
 
 foreach ($posts as $item) {
 
